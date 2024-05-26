@@ -76,6 +76,10 @@ body {
   -moz-transition: opacity .55s ease-in-out;
   -webkit-transition: opacity .55s ease-in-out;
 }
+.thumbs {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* animación de fade */
 .fade {
