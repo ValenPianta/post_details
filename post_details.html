@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post_details.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="upper-container">
+        <!-- Carousel de fotos -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="casa1.jpeg" style="width:100%" class="imagenes">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="casa2.jpeg" style="width:100%" class="imagenes">
+            </div>
+        
+            <div class="mySlides fade">
+                <img src="casa3.jpeg" style="width:100%" class="imagenes">
+            </div>
+        
+            <!-- Botones anterior y siguiente -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+            <!-- Puntitos de selección de imagen -->
+            <div style="text-align:center">
+                <img src="casa1.jpeg" style="width:17%" onclick="currentSlide(1)" class="thumbnail">
+                <img src="casa2.jpeg" style="width:17%" onclick="currentSlide(2)" class="thumbnail">
+                <img src="casa3.jpeg" style="width:17%" onclick="currentSlide(3)" class="thumbnail">
+            </div>
+        </div>
+        <div class="profile">
+            <img src="profile.png" alt="pfp" class="pfp">
+            <p id="nombre">Maria Alish <br> <label for="badge" id="badge">🥇 Best Seller</label>
+            </p>
+            <p id="calif">⭐4.5</p>
+        </div>
+        <div id="Checkout" class="inline">
+            <h1>Miami Beach</h1>
+            <form>
+                <p>Short description Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci culpa deleniti officiis minus recusandae, incidunt ducimus voluptate molestias, corrupti nihil quam et placeat soluta sit nobis provident ullam nesciunt! </p>
+                <div class="form-group price">
+                    <div class="available">
+                        <span>Hotel Avaliable</span>
+                    </div>
+                    <div class="amount-placeholder">
+                        <span>U$D 130.00</span>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <span class="visa"></span>
+                    <span class="mastercard"></span>
+                    <span class="amex"></span>
+                </div>
+                <div class="form-group">
+                    <label or="NameOnCard">Name on card</label> <br>
+                    <input id="NameOnCard" class="form-control" type="text" maxlength="255"></input>
+                </div>
+                <div class="form-group">
+                    <label for="CreditCardNumber">Card number</label> <br>
+                    <input id="CreditCardNumber" class="form-control" type="text"></input>
+                </div>
+                <div class="form-group">
+                    <label for="ExpiryDate">Expiry date</label> <br>
+                    <input id="ExpiryDate" class="form-control" type="date"></input>
+                </div>
+                <div class="form-group">
+                    <label for="SecurityCode">Security code</label>
+                    <div class="input-container" >
+                        <input id="SecurityCode" class="form-control" type="text" ></input>
+                        <i id="cvc" class="fa fa-question-circle"></i>
+                    </div>
+                </div>
+                <button class="submit-button">
+                    <span class="align-middle">Add to Cart</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="services">
+        <h1>Services:</h1>
+        <table class="service-table">
+            <tr>
+                <td>🛜 Wifi</td>
+                <td>👍 Recommended</td>
+                <td>🛏️ 3 beds</td>
+                <td>👪 5 people</td>
+                <td>🔥 Radiator</td>
+            </tr>
+            <tr>
+                <td>📺 TV</td>
+                <td>☕ Breakfast</td>
+                <td>🐶 Pets</td>
+                <td>🛀 2 Bathrooms</td>
+                <td>❄️ Air conditioner</td>
+            </tr>
+        </table>
+    </div>
+    <div class="description">
+        <h1>Description:</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut sunt aperiam tempore minus molestias quaerat. Quas dignissimos, autem praesentium numquam, accusamus impedit modi minima, tempora dolorem in doloremque et.
+        </p>
+    </div>
+
+    <script src="./post_details.js"> </script>
+</body>
+</html>
