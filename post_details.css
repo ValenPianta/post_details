@@ -100,24 +100,27 @@ body {
 .pfp {
   float: left;
   border-radius: 200px;
+  height: 5vw;
 }
 #nombre {
-  margin-top: 40px;
-  margin-left: 30px;
+  margin-top: 1vw;
+  margin-left: 2vw;
   float: left;
-  font-size: larger;
+  font-size: 1.6vw;
   font-weight: 600;
 }
 #badge {
   color: gray;
-  font-size: medium;
+  font-size: 1.2vw;
   font-weight: 500;
 }
 #calif {
-  margin-top: 50px;
-  margin-right: 40px;
+  margin-top: 1vw;
+  margin-right: 2vw;
   float: right;
-  font-size: larger;
+  font-size: 1.6vw;
+  font-weight: 500;
+
 }
 
 /* form de pago */
@@ -228,4 +231,9 @@ body {
 td {
   width: 20%;
   padding-top: 20px;
+}
+
+/* Maps */
+.maps {
+  border-radius: 20px;
 }
