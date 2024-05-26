@@ -5,6 +5,9 @@ body {
   margin-right:auto;
 }
 
+h1{
+  font-weight: 500;
+}
 * {box-sizing:border-box}
 
 .upper-container {
@@ -120,7 +123,6 @@ body {
   float: right;
   font-size: 1.6vw;
   font-weight: 500;
-
 }
 
 /* form de pago */
@@ -178,8 +180,8 @@ body {
   grid-area: 1 / 2 / 3 / 3;
   z-index: 100001;
   width: 90%;
-  min-width: 300px;
-  height: 100%;
+  /* min-width: 300px; */
+  /* height: 100%; */
   background: 0 0 #ffffff;
   border-radius: 20px;
   border: 1px solid #dedede;
@@ -225,15 +227,62 @@ body {
 
 /* servicios */
 
-.service-table {
-  width: 100%;
-}
-td {
-  width: 20%;
-  padding-top: 20px;
+.services {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 /* Maps */
 .maps {
   border-radius: 20px;
+}
+
+/* Adaptación a mobile */
+@media screen and (max-width: 850px) {
+  .upper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .slideshow-container {
+    order: 1;
+    margin-bottom: 4vw;
+  }
+  #Checkout {
+    order: 2;
+    width: 100%;
+  }
+  .profile {
+    order: 3;
+  }
+  .pfp {
+    height: 10vw;
+  }
+  #nombre {
+    font-size: 3vw;
+  }
+  #badge {
+    font-size: 2.3vw;
+  }
+  #calif {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 680px){
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 550px){
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
